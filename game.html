@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <title>Quiz Page</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <div id="game" class="justifyCenter flexcolumn">
+            <div id="hud">
+                <div class="hudItem">
+                    <p id="progressText" class="hudPrefix">Question</p>
+                </div>
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+                <div class="hudItem">
+                    <p class="hudPrefix">
+                        Score
+                    </p>
+                    <h1 class="hudMainText" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h1 id="question"></h1>
+            <div class="choiceContainer">
+                <p class="choicePrefix">A</p>
+                <p class="choiceText" data-number="1">Choice 1</p>
+            </div>
+            <div class="choiceContainer">
+                <p class="choicePrefix">B</p>
+                <p class="choiceText" data-number="2">Choice 2</p>
+            </div>
+            <div class="choiceContainer">
+                <p class="choicePrefix">C</p>
+                <p class="choiceText" data-number="3">Choice 3</p>
+            </div>
+            <div class="choiceContainer">
+                <p class="choicePrefix">D</p>
+                <p class="choiceText" data-number="4">Choice 4</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
